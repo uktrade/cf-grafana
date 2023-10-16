@@ -1,4 +1,6 @@
 ---
 applications:
-  - buildpacks:
-    - https://github.com/uktrade/grafana-buildpack.git
+  - name: cf-grafana
+    buildpacks:
+      - https://github.com/uktrade/grafana-buildpack.git
+    stack: cflinuxfs4
